@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Some Website</title>
+ </head>
+ <body>
+  {{> header}}
+  {{#each languages}}
+  <p>I currently know {{screamIt this.name}}</p>
+  {{/each}}
+
+  {{> footer}}
+ </body>
+</html>

@@ -49,6 +49,15 @@ app.get('/about', (req,res) => {
   });
 });
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    languages: [{name: 'Java'},
+                {name: 'python'},
+                {name: 'Javascript'},
+                {name: 'NodeJS'}]
+  });
+});
+
 app.get('/bad', (req,res) => {
   res.send({
     errorMessage: 'Unable to process request'
